@@ -47,12 +47,12 @@
 
     li + li:before {
         content: '';
-        width: 6px;
-        height: 6px;
+        width: 3px;
+        height: 3px;
         border-radius: 100%;
         background-color: #e83665;
         display: inline-block;
-        margin: 0 20px 3px;
+        margin: 0 10px 3px;
     }
 
     a {
@@ -107,6 +107,11 @@
     }
 
     @media screen and (min-width: 800px) {
+        li + li:before {
+            width: 6px;
+            height: 6px;
+            margin: 0 20px 3px;
+        }
 
         .header {
             right: 0;
